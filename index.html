@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+  <title>Controle Finaceiro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="Style/css/main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="cabeçalho-caixa">
+        <div class="cabecalho-2">
+         <div class="logo">
+           <img src="/img/logo.png" alt="">
+         </div>
+         <div class="titulo-cabeçalho">
+           <h1>Controle financeiro</h1>
+         </div>
+         <nav class="menu">
+           <img src="/img/menu-mobile.png" alt="">
+           <ul class="botões-menu">
+             <li><a href="#">Cadastro de transações</a></li>
+             <li><a href="#">Limpar dados</a></li>
+             <li><a href="#">Salvar no servidor</a></li>
+           </ul>
+         </nav>
+        </div> 
+       
+     </header>
+
+<main>
+    <div class="caixa">
+      <div class="tela-principal">
+        <div class="caixa-transacao">
+          <h2>Nova transação</h2>
+          <form class="transacao" action="" method="POST">
+            <div class="form-group">
+              <label for="tipo-transacao">Tipo de transação</label>
+              <select name="tipo-transacao" id="tipo-transacao">
+                <option value="C">Compra</option>
+                <option value="V">Venda</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="nome-mercadoria">Nome da mercadoria</label>
+                <input type="text" id="nome-mercadoria" placeholder="Input">
+              
+            </div>
+            <div class="form-group">
+              <label for="valor">Valor</label>
+                <input type="text" id="valor" placeholder="R$ 0,00">
+             
+            </div>
+            <div>
+              <button>Adicionar transação</button>
+            </div>
+           
+          </form>
+        </div>
+        <div class="caixa-extrato">
+          <h2>Extrato de transações</h2>
+          <table class="tabela-transacoes">
+            <thead>
+              <tr>
+                <th>Mercadoria</th>
+                <th class="tabela-valor">Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="width: 250px;"><span>+</span>Lorem ipsum dolor sit amet <span class="desloca">consectetur</span></td>
+                <td style="vertical-align: top;" class="tabela-valor">R$ 12.999,99</td>
+              </tr>
+              <tr>
+                <td><span>-</span>Quis nostrud exercitation</td>
+                <td class="tabela-valor">R$ 99,99</td>
+              </tr>
+              <tr>
+                <td><span>+</span>Lorem ipsum</td>
+                <td class="tabela-valor">R$ 9,99</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="tabela-resultados">
+            <thead>
+              <tr>
+                <th>Total</th>
+                <th>R$ 12.909,99<span>[LUCRO]</span></th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

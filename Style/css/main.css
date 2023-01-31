@@ -1,0 +1,437 @@
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+}
+
+
+
+
+@media (max-width:599px) {
+	.cabecalho-2 {
+		background-color: #E0E0E0;
+		height: 60px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0px 15px;
+	}
+
+	.titulo-cabeçalho {
+		font-size: 9px;
+	}
+
+	.menu img {
+		display: block;
+		width: 30px;
+	}
+
+	.botões-menu {
+		display: none;
+	}
+
+	main .caixa {
+		padding: 0 15px;
+	}
+
+	.caixa-transacao h2 {
+		display: none;
+	}
+
+	.tela-principal {
+		padding-top: 25px;
+	}
+
+	.caixa-transacao {
+		border-bottom: 1px solid #979797;
+		padding-bottom: 40px;
+	}
+
+	#tipo-transacao {
+		width: 100%;
+		padding: 6px;
+		color: #979797;
+	}
+
+	.form-group label {
+		font-size: 15px;
+		padding: 20px 0 10px 0;
+		display: inline-block;
+	}
+
+	.form-group input[type=text] {
+		width: 100%;
+		padding: 6px;
+	}
+
+	.transacao button {
+		margin-top: 25px;
+		width: 100%;
+		background-color: #333333;
+		color: #fff;
+		padding: 8px 0;
+		border-radius: 4px;
+		border: 0;
+		outline: 0;
+	}
+
+
+
+	.caixa-extrato {
+		margin-top: 40px;
+	}
+
+	.caixa-extrato h2 {
+		font-size: 20px;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+
+	.tabela-transacoes {
+		border-collapse: collapse;
+		margin: auto;
+		margin-bottom: 4px;
+	}
+
+	.tabela-transacoes th {
+		text-align: left;
+
+	}
+
+	.tabela-transacoes tbody tr {
+		border-bottom: 1px solid #979797;
+	}
+
+	.tabela-transacoes tbody tr:first-child {
+		border-top: 1px solid #979797;
+	}
+
+	.tabela-transacoes td, th {
+		padding: 12px;
+	}
+
+	.tabela-valor, th.tabela-valor {
+		text-align: center;
+	}
+
+	.tabela-transacoes thead th:first-child {
+		padding-left: 30px;
+	}
+
+	.tabela-transacoes tbody td span{
+		margin-right: 12px;
+	}
+
+	.desloca {
+		margin-left: 21px;
+	}
+
+	.tabela-transacoes tfoot td {
+		border-top: 1px solid #979797;
+		margin-top: 10px;
+		
+	}
+
+	.tabela-resultados {
+		margin: auto;
+		width: 100%;
+		border-collapse: collapse;
+		
+	}
+
+	.tabela-resultados thead tr:first-child {
+		border-top: 1px solid #979797;
+	}
+
+	.tabela-resultados th {
+		text-align: right;
+		vertical-align: top;
+	}
+
+	.tabela-resultados thead th span {
+		display: block;
+		font-weight: normal;
+		font-size: 12px;
+	}
+
+	.tabela-resultados thead th:first-child {
+		margin-left: 18px;
+		display: inline-block;
+	}
+
+}
+
+@media (min-width: 600px) {
+	.cabecalho-2 {
+		background-color: #E0E0E0;
+		height: 60px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0px 15px;
+	}
+
+	.titulo-cabeçalho {
+		font-size: 9px;
+	}
+
+	.menu img {
+		display: block;
+		width: 30px;
+	}
+
+	.botões-menu {
+		display: none;
+	}
+
+	main .caixa{
+		padding: 0 15px;
+	}
+
+	.tela-principal {
+		margin-top: 15px;
+	}
+
+	.caixa-transacao {
+		border: 1px solid #979797;
+		margin-top: 15px;
+		padding: 15px;
+		border-radius: 6px;
+	}
+
+	.caixa-transacao h2 {
+		font-size: 18px;
+		text-align: center;
+		padding-bottom: 15px;
+	}
+
+	.form-group label {
+		display: block;
+		font-size: 13px;
+	}
+
+	#tipo-transacao {
+		width: 100%;
+		padding: 6px;
+	}
+
+	.form-group input[type=text] {
+		width: 100%;
+		padding: 6px;
+	}	
+
+	.form-group:nth-child(1), .form-group:nth-child(3){
+		flex: 2;
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+
+	.form-group:nth-child(2) {
+		flex: 4;
+	}
+	.transacao {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 12px;
+	}
+
+	.transacao div:last-child {
+		width: 100%;
+		display: flex;
+	}
+
+	.transacao button {
+		margin-left: auto;
+		margin-top: 12px;
+		margin-right: 16px;
+		
+	}
+
+	.transacao button {
+		background-color: #333333;
+		color: #fff;
+		padding: 8px 50px;
+		border-radius: 4px;
+		border: 0;
+		outline: 0;
+	}
+
+	.caixa-extrato {
+		margin-top: 40px;
+	}
+
+	.caixa-extrato h2 {
+		font-size: 20px;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+
+	.tabela-transacoes {
+		border-collapse: collapse;
+		width: 100%;
+		margin-bottom: 4px;
+	}
+
+	.tabela-transacoes th {
+		text-align: left;
+
+	}
+
+	.tabela-transacoes tbody tr {
+		border-bottom: 1px solid #979797;
+	}
+
+	.tabela-transacoes tbody tr:first-child {
+		border-top: 1px solid #979797;
+	}
+
+	.tabela-transacoes td, th {
+		padding: 12px;
+	}
+
+	.tabela-valor, th.tabela-valor {
+		text-align: right;
+	}
+
+	.tabela-transacoes thead th:first-child {
+		padding-left: 30px;
+	}
+
+	.tabela-transacoes tbody td span{
+		margin-right: 12px;
+	}
+
+	.desloca {
+		margin-left: 21px;
+	}
+
+	.tabela-transacoes tfoot td {
+		border-top: 1px solid #979797;
+		margin-top: 10px;
+		
+	}
+
+	.tabela-resultados {
+		width: 100%;
+		border-collapse: collapse;
+		
+	}
+
+	.tabela-resultados thead tr:first-child {
+		border-top: 1px solid #979797;
+	}
+
+	.tabela-resultados th {
+		text-align: right;
+		vertical-align: top;
+	}
+
+	.tabela-resultados thead th span {
+		display: block;
+		font-weight: normal;
+		font-size: 12px;
+	}
+
+	.tabela-resultados thead th:first-child {
+		margin-left: 18px;
+		display: inline-block;
+	}
+}
+
+@media (min-width: 900px) {
+
+	.titulo-cabeçalho {
+		flex: 1;
+		margin-left: 15px;
+	}
+	.menu img {
+		display: none;
+	}
+
+	.botões-menu {
+		display: flex;
+		background-color: #fff;
+		padding: 12px;
+	}
+
+	.botões-menu a {
+		padding-right: 8px;
+		padding-left: 8px;
+		color: #333;
+		font-size: 15px;
+		font-weight: bold;
+	}
+
+	.botões-menu li {
+		border-left: 1px solid #979797;
+	}
+
+	.botões-menu li:nth-of-type(1) {
+		border-left: none;
+
+	}
+
+	.tela-principal {
+		display: flex;
+	}
+
+	.caixa-transacao {
+		width: 50%;
+		margin-right: 25px;
+	}
+
+	.transacao {
+		flex-direction: column;
+	}
+
+	.form-group:nth-child(1),.form-group:nth-child(3)  {
+		margin: 0;
+	}
+
+	.form-group label {
+		font-size: 15px;
+		padding: 20px 0 10px 0;
+	}
+
+	.caixa-extrato {
+		width: 50%;
+	}
+
+	.transacao button {
+		width: 100%;
+		margin: 20px 0;
+	}
+
+
+}
+
+@media (min-width: 1200px) {
+	main .caixa {
+		max-width: 1500px;
+		margin: auto;
+	}
+	.cabecalho-caixa {
+		display: flex;
+		justify-content: center;
+		background-color: #E0E0E0;
+	}
+
+	.cabecalho-2 {
+		width: 1500px;
+	}
+}
+
